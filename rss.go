@@ -93,7 +93,7 @@ func handler(w http.ResponseWriter, r *http.Request) {
 	root := Root{}
 	root.Feed = feed
 
-	json.NewEncoder(w).Encode(root)
+	json.NewEncoder(w).Encode(&root)
 }
 
 type Rss struct {
